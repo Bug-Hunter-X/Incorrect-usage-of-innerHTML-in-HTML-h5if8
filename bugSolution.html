@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML Code</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //Correct way of accessing element and updating its content. Note that we are appending a <p> element here. 
+    let div = document.getElementById('myDiv');
+    let p = document.createElement('p');
+    p.textContent = "This text is appended correctly";
+    div.appendChild(p);
+
+    //Another correct way of updating content of the div element.
+    //document.getElementById('myDiv').innerHTML += "<p>This text is also appended correctly</p>";
+  </script>
+</body>
+</html>
