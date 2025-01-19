@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    //Incorrect way of accessing element 
+    document.getElementById('myDiv').innerHTML = "<p>This text replaces the div content incorrectly</p>";
+  </script>
+</body>
+</html>
